@@ -5,10 +5,24 @@ namespace Daw\models;
  */
 class Db
 {
+  private $host="localhost";
+  private $usuario="root";
+  private $pass="";
+  private $db="evento";
+  private $conector;
 
   function __construct()
   {
+    $this->conector = new \mysqli ($this->host, $this->usuario, $this->pass, $this->db);
   }
+
+function getconector(){
+  return $this->conector;
+}
+
+function realizarConsultas($consulta){
+  return $this->conector->query($consulta);
+}
 
 }
 
