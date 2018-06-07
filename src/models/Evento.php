@@ -16,7 +16,13 @@ function listarEventos(){
   $listadoEventos=parent::realizarConsultas($consulta);
   return $listadoEventos;
 }
+//funcion que inserta eventos
+function insertarEventos($nombre){
+ $consulta="INSERT INTO registro (nombre) VALUES ('$nombre');";
+ $listadoEventos=parent::realizarConsultas($consulta);
+ return $listadoEventos;
 
+}
 
 }
 
