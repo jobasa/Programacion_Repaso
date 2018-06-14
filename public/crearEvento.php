@@ -9,9 +9,12 @@ use Daw\models\Evento;
     <title></title>
   </head>
   <body>
+    <h1><center>CREA TU EVENTO</center></h1>
     <form class="" action="crearEventoDB.php" method="post">
-     <input type="text" name="nombre">
-     <input type="submit" name="" value="CREAR">
-   </form>
+      <center>
+        <input type="text" name="nombre">
+        <input type="submit" name="" value="CREAR">
+      </center>
+    </form>
   </body>
 </html>
