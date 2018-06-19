@@ -23,6 +23,12 @@ function insertarEventos($nombre){
  return $listadoEventos;
 
 }
+//funcion que actualiza EVENTOS
+function actualizarEventos($nombre, $id) {
+  $consulta="UPDATE registro SET nombre='$nombre' WHERE id='$id'";
+  $listadoEventos=parent::realizarConsultas($consulta);
+  return $listadoEventos;
+}
 
 }
 

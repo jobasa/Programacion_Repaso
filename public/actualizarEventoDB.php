@@ -12,11 +12,12 @@ use Daw\models\Evento;
     <?php
     //Recojer parametros por post
     $nombre=$_POST["nombre"];
+    $id=$_POST["id"];
     //Ejemplo de uso de modelos
     $e = new Evento();
-    $resultado=$e->insertarEventos($nombre);
+    $resultado=$e->actualizarEventos($nombre, $id);
     if ($resultado==TRUE) {
-      echo "Se ha insertado correctamente";
+      echo "Se ha actualizado correctamente";
     }
     echo "<br><a href="."index.php".">Ir al index de eventos.</a>";
     ?>
