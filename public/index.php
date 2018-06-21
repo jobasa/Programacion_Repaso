@@ -23,6 +23,8 @@ use Daw\models\Evento;
     foreach ($resultado as $evento) {
       echo "<tr>".
       "<th>".$evento['nombre']."</th>".
+      "<th><a href="."actualizarEvento.php?codigo=".$evento['nombre'].">Modificar</a></th>".
+      "<th><a href="."borrarEvento.php?codigo=".$evento['nombre'].">Borrar</a></th>".
       "</tr>";
     }
     ?>

@@ -29,6 +29,11 @@ function actualizarEventos($nombre, $id) {
   $listadoEventos=parent::realizarConsultas($consulta);
   return $listadoEventos;
 }
+//funcion borrar EVENTOS
+function borrarEventos($eventoBorrado){
+
+  
+}
 
 }
 
