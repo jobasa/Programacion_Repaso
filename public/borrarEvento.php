@@ -8,15 +8,15 @@
     <h1>USUARIO ELIMINADO CORRECTAMENTE</h1>
     <a href="index.php" style="color:#000000">Ir al index de usuarios.</a>
     <?php
-    require_once("../src/models/Table.php");
-    use Daw\table\Table as Table;
+    require_once __DIR__.'/../vendor/autoload.php';
+    use Daw\models\Evento;
 
-    //Recojer con GET la variable "codigo" de listadoUsuarios.php
-    $usuarioBorrado=$_GET["codigo"];
+    //Recojer con GET la variable "codigo" de index.php
+    $eventoBorrado=$_GET["codigo"];
 
     //creo la conexion con la base de datos
-    $resultado= new Table();
-    $resultado->borrarUsuario($usuarioBorrado)
+    $resultado= new Evento();
+    $resultado->borrarEventos($eventoBorrado)
      ?>
 
   </body>

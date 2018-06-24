@@ -31,8 +31,11 @@ function actualizarEventos($nombre, $id) {
 }
 //funcion borrar EVENTOS
 function borrarEventos($eventoBorrado){
+  $consulta="DELETE FROM registro
+            WHERE id='$eventoBorrado'";
+  $listadoEventos=parent::realizarConsultas($consulta);
+  return $listadoEventos;
 
-  
 }
 
 }
