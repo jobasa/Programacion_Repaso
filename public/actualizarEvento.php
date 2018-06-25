@@ -10,10 +10,15 @@ use Daw\models\Evento;
   </head>
   <body>
     <h1><center>ACTUALIZA TU EVENTO</center></h1>
+
     <form class="" action="actualizarEventoDB.php" method="post">
       <center>
+        <?php
+          $eventoActualizado=$_GET["codigo"];
+          echo"<input type="."hidden"." name="."id"." value=".$eventoActualizado.">"
+        ?>
         <input type="text" name="nombre">
-        <input type="submit" name="" value="ACTUALIZAR">
+        <input type="submit" name="Enviar" value="ACTUALIZAR">
       </center>
     </form>
   </body>

@@ -10,11 +10,12 @@ use Daw\models\Evento;
   </head>
   <body>
     <h1><center>CREA TU EVENTO</center></h1>
-    <form class="" action="crearEventoDB.php" method="post">
+    <form class="" action="crearEventoDB.php" method="post" onsubmit="return comprobar()">
       <center>
-        <input type="text" name="nombre">
-        <input type="submit" name="" value="CREAR">
+        <input type="text" name="nombre" value="" placeholder="" id="nombre">
+        <input type="submit" name="Enviar" value="CREAR">
       </center>
     </form>
+    <script type="text/javascript" src="js/validarInsercion.js"></script>
   </body>
 </html>
